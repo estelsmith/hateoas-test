@@ -19,6 +19,21 @@ class Version20150413130431 extends AbstractMigration
         $table->setPrimaryKey(['id']);
 
         $table
+            ->addColumn('password', 'string')
+            ->setNotnull(true)
+        ;
+
+        $table
+            ->addColumn('roles', 'array')
+            ->setNotnull(true)
+        ;
+
+        $table
+            ->addColumn('salt', 'string')
+            ->setNotnull(true)
+        ;
+
+        $table
             ->addColumn('username', 'string')
             ->setNotnull(true)
         ;

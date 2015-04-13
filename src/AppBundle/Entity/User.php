@@ -3,6 +3,8 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use GoIntegro\Hateoas\JsonApi\ResourceEntityInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity()
@@ -13,7 +15,7 @@ use Doctrine\ORM\Mapping as ORM;
  *      }
  * )
  */
-class User
+class User implements UserInterface, ResourceEntityInterface
 {
     /**
      * @ORM\Id()
@@ -22,6 +24,24 @@ class User
      * @var int
      */
     private $id;
+
+    /**
+     * @ORM\Column(name="password", type="string", nullable=false)
+     * @var string
+     */
+    private $password;
+
+    /**
+     * @ORM\Column(name="roles", type="array", nullable=false)
+     * @var array
+     */
+    private $roles = ['ROLE_USER'];
+
+    /**
+     * @ORM\Column(name="salt", type="string", nullable=false)
+     * @var string
+     */
+    private $salt;
 
     /**
      * @ORM\Column(name="username", type="string", nullable=false)
@@ -44,7 +64,60 @@ class User
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
+    }
 
+    /**
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param string $password
+     * @return $this
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+        return $this;
+    }
+
+    /**
+     * @return array
+     */
+    public function getRoles()
+    {
+        return $this->roles;
+    }
+
+    /**
+     * @param array $roles
+     * @return $this
+     */
+    public function setRoles($roles)
+    {
+        $this->roles = $roles;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSalt()
+    {
+        return $this->salt;
+    }
+
+    /**
+     * @param string $salt
+     * @return $this
+     */
+    public function setSalt($salt)
+    {
+        $this->salt = $salt;
         return $this;
     }
 
@@ -63,7 +136,11 @@ class User
     public function setUsername($username)
     {
         $this->username = $username;
-
         return $this;
+    }
+
+    public function eraseCredentials()
+    {
+        // nothing, really.
     }
 }
