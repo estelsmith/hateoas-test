@@ -21,7 +21,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "gointegro/hateoas-bundle": "0.10.*",
         "doctrine/migrations": "dev-master#efb77c10dfb75485998a843154bbc44d8124c4d1",
-        "doctrine/doctrine-migrations-bundle": "1.0.*"
+        "doctrine/doctrine-migrations-bundle": "1.0.*",
+        "doctrine/doctrine-fixtures-bundle": "2.2.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

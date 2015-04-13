@@ -10,6 +10,7 @@ class AppKernel extends Kernel
         $bundles = array(
             // Framework bundles
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Doctrine\Bundle\MigrationsBundle\DoctrineMigrationsBundle(),
             new GoIntegro\Bundle\HateoasBundle\GoIntegroHateoasBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
