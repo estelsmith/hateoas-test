@@ -1,0 +1,3 @@
+gointegro_api:
+    resource: "@GoIntegroHateoasBundle/Resources/config/routing.yml"
+    prefix: "%api.url_path%"

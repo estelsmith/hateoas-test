@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "928cf07615062470571573abc0843fa6",
+    "hash": "d5ba9608f3cde8e8db96f5af33a21daa",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -709,6 +709,355 @@
             "time": "2014-12-16 13:45:01"
         },
         {
+            "name": "gointegro/hateoas",
+            "version": "v0.10.5",
+            "target-dir": "GoIntegro/Hateoas",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GoIntegro/hateoas.git",
+                "reference": "3f4a18fee91a8b28f7c9b8edb03cffdb5798541c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GoIntegro/hateoas/zipball/3f4a18fee91a8b28f7c9b8edb03cffdb5798541c",
+                "reference": "3f4a18fee91a8b28f7c9b8edb03cffdb5798541c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/orm": "*",
+                "gointegro/json": "*",
+                "gointegro/raml": "*",
+                "php": ">=5.4.0",
+                "predis/predis": "*",
+                "rhumsaa/uuid": "*",
+                "symfony/doctrine-bridge": "*",
+                "symfony/filesystem": "*",
+                "symfony/http-foundation": "*",
+                "symfony/http-kernel": "*",
+                "symfony/routing": "*",
+                "symfony/security": "*",
+                "symfony/security-core": "*",
+                "symfony/translation": "*",
+                "symfony/validator": "*",
+                "symfony/yaml": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpdocumentor/phpdocumentor": "*",
+                "phpunit/phpunit": "*"
+            },
+            "suggest": {
+                "nelmio/solarium-bundle": "*",
+                "stof/doctrine-extensions-bundle": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "GoIntegro\\Hateoas": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Javier Lorenzana",
+                    "email": "javier.lorenzana@gointegro.com"
+                },
+                {
+                    "name": "GOintegro Devs",
+                    "homepage": "http://www.gointegro.com"
+                },
+                {
+                    "name": "Adolfo Castro Menna",
+                    "email": "adolfo.casto@gointegro.com"
+                }
+            ],
+            "description": "GOintegro HATEOAS Lib",
+            "homepage": "http://www.gointegro.com",
+            "keywords": [
+                "HATEOAS",
+                "JSON-API",
+                "api",
+                "doctrine",
+                "rest"
+            ],
+            "time": "2015-03-18 14:14:30"
+        },
+        {
+            "name": "gointegro/hateoas-bundle",
+            "version": "v0.10.3",
+            "target-dir": "GoIntegro/Bundle/HateoasBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GoIntegro/hateoas-bundle.git",
+                "reference": "bf2c6824d027eedf235effd8b9dfeee28b68508d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GoIntegro/hateoas-bundle/zipball/bf2c6824d027eedf235effd8b9dfeee28b68508d",
+                "reference": "bf2c6824d027eedf235effd8b9dfeee28b68508d",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/doctrine-bundle": "*",
+                "doctrine/orm": "*",
+                "gointegro/hateoas": "*",
+                "php": ">=5.4.0",
+                "symfony/doctrine-bridge": "*",
+                "symfony/framework-bundle": "*",
+                "symfony/monolog-bundle": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "phpdocumentor/phpdocumentor": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "GoIntegro\\Bundle\\HateoasBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Javier Lorenzana",
+                    "email": "javier.lorenzana@gointegro.com"
+                },
+                {
+                    "name": "GOintegro Devs",
+                    "homepage": "http://www.gointegro.com"
+                },
+                {
+                    "name": "Adolfo Castro Menna",
+                    "email": "adolfo.casto@gointegro.com"
+                }
+            ],
+            "description": "GOintegro HATEOAS Bundle",
+            "homepage": "http://www.gointegro.com",
+            "keywords": [
+                "HATEOAS",
+                "JSON-API",
+                "api",
+                "doctrine",
+                "rest"
+            ],
+            "time": "2015-03-11 14:56:19"
+        },
+        {
+            "name": "gointegro/inflector",
+            "version": "v0.9.18",
+            "target-dir": "GoIntegro/Inflector",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GoIntegro/inflector.git",
+                "reference": "72a3ae951ae1ee1ce1e945dad58a915ef5aefdc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GoIntegro/inflector/zipball/72a3ae951ae1ee1ce1e945dad58a915ef5aefdc3",
+                "reference": "72a3ae951ae1ee1ce1e945dad58a915ef5aefdc3",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpdocumentor/phpdocumentor": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "GoIntegro\\Inflector": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Javier Lorenzana",
+                    "email": "javier.lorenzana@gointegro.com"
+                },
+                {
+                    "name": "GOintegro Devs",
+                    "homepage": "http://www.gointegro.com"
+                },
+                {
+                    "name": "Adolfo Castro Menna",
+                    "email": "adolfo.casto@gointegro.com"
+                }
+            ],
+            "description": "GOintegro Inflector Lib",
+            "homepage": "http://www.gointegro.com",
+            "keywords": [
+                "doctrine",
+                "inflection",
+                "pluralize",
+                "singularize"
+            ],
+            "time": "2015-01-09 13:40:36"
+        },
+        {
+            "name": "gointegro/json",
+            "version": "v0.9.16",
+            "target-dir": "GoIntegro/Json",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GoIntegro/json.git",
+                "reference": "ba0bd1715984b570ac6f500458a5333fb74ab8c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GoIntegro/json/zipball/ba0bd1715984b570ac6f500458a5333fb74ab8c0",
+                "reference": "ba0bd1715984b570ac6f500458a5333fb74ab8c0",
+                "shasum": ""
+            },
+            "require": {
+                "justinrainbow/json-schema": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpdocumentor/phpdocumentor": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "GoIntegro\\Json": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Javier Lorenzana",
+                    "email": "javier.lorenzana@gointegro.com"
+                },
+                {
+                    "name": "GOintegro Devs",
+                    "homepage": "http://www.gointegro.com"
+                },
+                {
+                    "name": "Adolfo Castro Menna",
+                    "email": "adolfo.casto@gointegro.com"
+                }
+            ],
+            "description": "GOintegro JSON Lib",
+            "homepage": "http://www.gointegro.com",
+            "keywords": [
+                "decode",
+                "encode",
+                "json",
+                "parser",
+                "schema"
+            ],
+            "time": "2015-01-09 13:41:35"
+        },
+        {
+            "name": "gointegro/raml",
+            "version": "v0.9.20",
+            "target-dir": "GoIntegro/Raml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GoIntegro/raml.git",
+                "reference": "9f025727126eab36aabd55a233fbb7f2df88a13c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GoIntegro/raml/zipball/9f025727126eab36aabd55a233fbb7f2df88a13c",
+                "reference": "9f025727126eab36aabd55a233fbb7f2df88a13c",
+                "shasum": ""
+            },
+            "require": {
+                "gointegro/inflector": "*",
+                "gointegro/json": "*",
+                "justinrainbow/json-schema": "*",
+                "php": ">=5.4.0",
+                "rhumsaa/uuid": "*",
+                "symfony/yaml": "*"
+            },
+            "require-dev": {
+                "codeception/codeception": "*",
+                "codeclimate/php-test-reporter": "dev-master",
+                "phpdocumentor/phpdocumentor": "*",
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "GoIntegro\\Raml": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Javier Lorenzana",
+                    "email": "javier.lorenzana@gointegro.com"
+                },
+                {
+                    "name": "GOintegro Devs",
+                    "homepage": "http://www.gointegro.com"
+                },
+                {
+                    "name": "Adolfo Castro Menna",
+                    "email": "adolfo.casto@gointegro.com"
+                }
+            ],
+            "description": "GOintegro RAML Lib",
+            "homepage": "http://www.gointegro.com",
+            "keywords": [
+                "api",
+                "navigator",
+                "parser",
+                "raml"
+            ],
+            "time": "2015-01-09 15:27:37"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.0",
             "target-dir": "Incenteev/ParameterHandler",
@@ -809,6 +1158,72 @@
                 "sql"
             ],
             "time": "2014-01-12 16:20:24"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "2465fe486c864e30badaa4d005ebdf89dbc503f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2465fe486c864e30badaa4d005ebdf89dbc503f3",
+                "reference": "2465fe486c864e30badaa4d005ebdf89dbc503f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "json-schema/json-schema-test-suite": "1.1.0",
+                "phpdocumentor/phpdocumentor": "~2",
+                "phpunit/phpunit": "~3.7"
+            },
+            "bin": [
+                "bin/validate-json"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "JsonSchema": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Bruno Prieto Reis",
+                    "email": "bruno.p.reis@gmail.com"
+                },
+                {
+                    "name": "Justin Rainbow",
+                    "email": "justin.rainbow@gmail.com"
+                },
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                },
+                {
+                    "name": "Robert Schönthal",
+                    "email": "seroscho@googlemail.com"
+                }
+            ],
+            "description": "A library to validate a json schema.",
+            "homepage": "https://github.com/justinrainbow/json-schema",
+            "keywords": [
+                "json",
+                "schema"
+            ],
+            "time": "2015-03-27 16:41:39"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -958,6 +1373,56 @@
             "time": "2015-03-09 09:58:04"
         },
         {
+            "name": "predis/predis",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "7a170b3d8123c556597b4fbdb88631f99de180c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/7a170b3d8123c556597b4fbdb88631f99de180c2",
+                "reference": "7a170b3d8123c556597b4fbdb88631f99de180c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete PHP client library for Redis",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2015-01-02 12:51:34"
+        },
+        {
             "name": "psr/log",
             "version": "1.0.0",
             "source": {
@@ -994,6 +1459,72 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "rhumsaa/uuid",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramsey/uuid.git",
+                "reference": "cca98c652cac412c9c2f109c69e5532f313435fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/cca98c652cac412c9c2f109c69e5532f313435fc",
+                "reference": "cca98c652cac412c9c2f109c69e5532f313435fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "doctrine/dbal": ">=2.3",
+                "moontoast/math": "~1.1",
+                "phpunit/phpunit": "~4.1",
+                "satooshi/php-coveralls": "~0.6",
+                "symfony/console": "~2.3"
+            },
+            "suggest": {
+                "doctrine/dbal": "Allow the use of a UUID as doctrine field type.",
+                "moontoast/math": "Support for converting UUID to 128-bit integer (in string form).",
+                "symfony/console": "Support for use of the bin/uuid command line tool."
+            },
+            "bin": [
+                "bin/uuid"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Rhumsaa\\Uuid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn Huizendveld",
+                    "email": "marijn.huizendveld@gmail.com"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "homepage": "http://benramsey.com"
+                }
+            ],
+            "description": "A PHP 5.3+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
+            "homepage": "https://github.com/ramsey/uuid",
+            "keywords": [
+                "guid",
+                "identifier",
+                "uuid"
+            ],
+            "time": "2014-11-09 18:42:56"
         },
         {
             "name": "sensio/distribution-bundle",
