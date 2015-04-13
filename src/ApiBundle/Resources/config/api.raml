@@ -1,11 +1,45 @@
 #%RAML 0.8
-title: HATEOAS Inc. Example API
+title: Test API
 version: v1
 baseUri: http://localhost:8000/api/{version}
 mediaType: application/vnd.api+json
 
 /users:
     get:
-        description: Fetches application users
+        description: Retrieve all application users
         responses:
-            200
+            200:
+    post:
+        description: Create one or more application users
+        responses:
+            201:
+    /{user-ids}:
+        get:
+            description: Fetch one or more users by id.
+            responses:
+                200:
+        put:
+            description: Update one or more users by id.
+            responses:
+                200:
+        delete:
+            description: Delete one or more users by id.
+        /links:
+            /{relationship}:
+                get:
+                    description: Fetch a user-related resource.
+                    responses:
+                        200:
+                post:
+                    description: Add one or more user relationships.
+                    responses:
+                        201:
+                put:
+                    description: Update a user relationship.
+                    responses:
+                        204:
+                delete:
+                    description: Remove a user relationship by id.
+            /{relationship-ids}:
+                delete:
+                    description: Remove multiple user relationships by id.
