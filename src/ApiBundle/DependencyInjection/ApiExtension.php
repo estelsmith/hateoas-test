@@ -15,7 +15,6 @@ class ApiExtension extends Extension
         $servicesLoader = new YamlFileLoader($container, $fileLocator);
         $servicesLoader->load('services.yml');
 
-        $container->setParameter('api.base_url', 'http://localhost');
         $container->setParameter('api.url_path', '/api/v1');
         $container->setParameter('api.resource_class_path', 'Hateoas/Resource');
     }
