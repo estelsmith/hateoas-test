@@ -1,0 +1,6 @@
+services:
+    api.security.authorization.voter.grant_everything:
+        class: "ApiBundle\Security\Authorization\Voter\GrantEverythingVoter"
+        public: false
+        tags:
+            - { name: "security.voter" }
