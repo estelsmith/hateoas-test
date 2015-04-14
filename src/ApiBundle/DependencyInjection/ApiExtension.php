@@ -16,6 +16,6 @@ class ApiExtension extends Extension
         $servicesLoader->load('services.yml');
 
         $container->setParameter('api.url_path', '/api/v1');
-        $container->setParameter('api.resource_class_path', 'Hateoas/Resource');
+        $container->setParameter('api.resource_class_path', '@ApiBundle\Hateoas\Resource');
     }
 }
