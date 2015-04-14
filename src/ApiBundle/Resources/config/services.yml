@@ -4,3 +4,9 @@ services:
         public: false
         tags:
             - { name: "security.voter" }
+
+    api.security.authorization.filter.user:
+        class: "ApiBundle\Security\Authorization\Voter\UserVoterFilter"
+        public: false
+        tags:
+            - { name: "hateoas.repo_helper.filter" }
