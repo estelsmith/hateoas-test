@@ -5,6 +5,7 @@ namespace AppBundle\Entity;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\Common\Collections\Selectable;
 use Doctrine\ORM\Mapping as ORM;
+use GoIntegro\Hateoas\JsonApi\ResourceEntityInterface;
 
 /**
  * @ORM\Entity()
@@ -15,7 +16,7 @@ use Doctrine\ORM\Mapping as ORM;
  *      }
  * )
  */
-class School
+class School implements ResourceEntityInterface
 {
     /**
      * @ORM\Id()
