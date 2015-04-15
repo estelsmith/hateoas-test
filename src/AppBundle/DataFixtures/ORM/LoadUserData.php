@@ -13,18 +13,15 @@ class LoadUserData implements FixtureInterface
         $users = [
             [
                 'username' => 'test1',
-                'password' => 'test1',
-                'salt' => 'test123'
+                'password' => 'test1'
             ],
             [
                 'username' => 'test2',
-                'password' => 'test2',
-                'salt' => 'test123'
+                'password' => 'test2'
             ],
             [
                 'username' => 'test3',
-                'password' => 'test3',
-                'salt' => 'test123'
+                'password' => 'test3'
             ]
         ];
 
@@ -32,7 +29,6 @@ class LoadUserData implements FixtureInterface
             $user = (new User())
                 ->setUsername($userData['username'])
                 ->setPassword($userData['password'])
-                ->setSalt($userData['salt'])
             ;
 
             $manager->persist($user);

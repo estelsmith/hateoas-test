@@ -30,7 +30,7 @@ class Version20150413130431 extends AbstractMigration
 
         $table
             ->addColumn('salt', 'string')
-            ->setNotnull(true)
+            ->setNotnull(false)
         ;
 
         $table

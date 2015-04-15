@@ -38,8 +38,8 @@ class User implements UserInterface, ResourceEntityInterface
     private $roles = ['ROLE_USER'];
 
     /**
-     * @ORM\Column(name="salt", type="string", nullable=false)
-     * @var string
+     * @ORM\Column(name="salt", type="string", nullable=true)
+     * @var string|null
      */
     private $salt;
 
@@ -104,7 +104,7 @@ class User implements UserInterface, ResourceEntityInterface
     }
 
     /**
-     * @return string
+     * @return string|null
      */
     public function getSalt()
     {
@@ -112,7 +112,7 @@ class User implements UserInterface, ResourceEntityInterface
     }
 
     /**
-     * @param string $salt
+     * @param string|null $salt
      * @return $this
      */
     public function setSalt($salt)
